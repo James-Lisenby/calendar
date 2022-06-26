@@ -25,15 +25,19 @@ textarea {
   white-space: pre-wrap;
 }
 
+#timeTable {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+
 .time-block {
   text-align: center;
   border-radius: 15px;
-}
-
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;
 }
 
 .hour {
@@ -57,7 +61,7 @@ textarea {
   color: white;
 }
 
-.saveBtn {
+#saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -70,19 +74,8 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
-#timeBlock {
+table, th, td {
+  border:1px solid black;
+  width: 80%;
   height: 80px;
-  border: 1px solid rgb(0, 0, 0);
-  display: flex;
-}
-
-#save {
-  float:right;
-  width: 50px;
-  height: 50px;
-  border: 5px solid black;
-}
-
-.container {
-  align-items: flex-end;
 }
