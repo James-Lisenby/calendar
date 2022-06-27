@@ -5,6 +5,15 @@ var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 document.getElementById("currentDay").innerHTML = today;
 // Displays the date and time in the jumbotron.
 
+var saveBtn = document.getElementsByClassName("save");
+var textInput = document.getElementById("userInput");
+
+
+
+
+
+
+
 
 
 // add event listener to "save" button.
