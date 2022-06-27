@@ -5,25 +5,11 @@ var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 document.getElementById("currentDay").innerHTML = today;
 // Displays the date and time in the jumbotron.
 
-var userTextInput = document.querySelector("#userInput");
-var saveBtn = document.getElementsByClassName("#save");
+const button = document.querySelector("button");
+button.addEventListener('click', getInputValue);
 
-
-function storeText() {
-    saveBtn.addEventLisetener("click");
-    console.log("what");
+function getInputValue() {
+    let inputVal = document.getElementById("userInput").value; 
+    console.log(inputVal);
+    document.getElementById("userInput").innerHTML = inputVal;
 }
-
-
-
-
-
-
-// add event listener to "save" button.
-// store user input into local storage as a string upon hitting the "save" button.
-
-
-// retrieve data on page load.
-
-// set if hour is past,cpresent, or future.
-
