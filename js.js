@@ -7,18 +7,25 @@ document.getElementById("currentDay").innerHTML = today;
 
 
 // Remder a block for each hour of the planner.
-for(var i =9; i <= 17; i++) {
+// for(var i =9; i <= 17; i++) {
+// }
 
-}
+// const button = document.querySelector("button");
+// button.addEventListener('click', getInputValue);
 
+// function getInputValue() {
+//     let inputVal = document.getElementsByClassName("userInput").value; 
+//     console.log(inputVal);
+//     document.getElementById("userInput").innerHTML = inputVal;
+// }
+// // Currently function will console log user input. 
 
+let saveBtn = document.getElementsByTagName("button");
+let userInput = document.getElementsByTagName("textarea").value;
 
-const button = document.querySelector("button");
-button.addEventListener('click', getInputValue);
 
 function getInputValue() {
-    let inputVal = document.getElementById("userInput").value; 
-    console.log(inputVal);
-    document.getElementById("userInput").innerHTML = inputVal;
+    let userText = document.getElementsByTagName("textarea").value;
+    console.log(userText);
+
 }
-// Currently function will console log user input. 
