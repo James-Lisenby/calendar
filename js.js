@@ -6,26 +6,24 @@ document.getElementById("currentDay").innerHTML = today;
 // Displays the date and time in the jumbotron.
 
 
-// Remder a block for each hour of the planner.
-// for(var i =9; i <= 17; i++) {
+
+
+// var saveBtn = getElementById('saveInput')
+// addEventListener('click', saveBtn)
+// onclick(getInput)
+
+// function getInput(){
+//     userInput = getElementById('input').value;
+//     console.log(userInput);
 // }
 
-// const button = document.querySelector("button");
-// button.addEventListener('click', getInputValue);
+const text1 = document.getElementById('input');
+const saveBtn = document.getElementById('saveInput');
+const userInput = document.getElementsByName('textarea');
 
-// function getInputValue() {
-//     let inputVal = document.getElementsByClassName("userInput").value; 
-//     console.log(inputVal);
-//     document.getElementById("userInput").innerHTML = inputVal;
-// }
-// // Currently function will console log user input. 
-
-let saveBtn = document.getElementsByTagName("button");
-let userInput = document.getElementsByTagName("textarea").value;
-
-
-function getInputValue() {
-    let userText = document.getElementsByTagName("textarea").value;
-    console.log(userText);
-
+function getInput() {
+    userInput.innerHTML = text1.value;
+    console.log(userInput);
 }
+
+saveBtn.addEventListener('click', getInput);
