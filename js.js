@@ -29,51 +29,59 @@ const saveBtn8 = document.getElementById('saveInput-8');
 const saveBtn9 = document.getElementById('saveInput-9');
 
 
-const userInput = document.getElementsByName('textarea');
 
 function getInput1() {
-    userInput.innerHTML = text1.value;
-    console.log(userInput);
-}
+    var userInput1 = text1.value;
+    localStorage.setItem("userInput1", JSON.stringify(userInput1));
+    console.log(userInput1);
+};
 
 function getInput2() {
-    userInput.innerHTML = text2.value;
-    console.log(userInput);
+    var userInput2 = text2.value;
+    localStorage.setItem("userInput2", JSON.stringify(userInput2));
+    console.log(userInput2);
 }
 
 function getInput3() {
-    userInput.innerHTML = text3.value;
-    console.log(userInput);
+    var userInput3 = text3.value;
+    localStorage.setItem("userInput3", JSON.stringify(userInput3));
+    console.log(userInput3);
 }
 
 function getInput4() {
-    userInput.innerHTML = text4.value;
-    console.log(userInput);
+    var userInput4 = text4.value;
+    localStorage.setItem("userInput4", JSON.stringify(userInput4));
+    console.log(userInput4);
 }
 
 function getInput5() {
-    userInput.innerHTML = text5.value;
-    console.log(userInput);
+    userInput5.innerHTML = text5.value;
+    localStorage.setItem("userInput5", JSON.stringify(userInput5));
+    console.log(userInput5);
 }
 
 function getInput6() {
-    userInput.innerHTML = text6.value;
-    console.log(userInput);
+    userInput6.innerHTML = text6.value;
+    localStorage.setItem("userInput6", JSON.stringify(userInput6));
+    console.log(userInput6);
 }
 
 function getInput7() {
-    userInput.innerHTML = text7.value;
-    console.log(userInput);
+    userInput7.innerHTML = text7.value;
+    localStorage.setItem("userInput7", JSON.stringify(userInput7));
+    console.log(userInput7);
 }
 
 function getInput8() {
-    userInput.innerHTML = text8.value;
-    console.log(userInput);
+    userInput8.innerHTML = text8.value;
+    localStorage.setItem("userInput8", JSON.stringify(userInput8));
+    console.log(userInput8);
 }
 
 function getInput9() {
-    userInput.innerHTML = text9.value;
-    console.log(userInput);
+    userInput9.innerHTML = text9.value;
+    localStorage.setItem("userInput9", JSON.stringify(userInput9));
+    console.log(userInput9);
 }
 
 saveBtn1.addEventListener('click', getInput1);
