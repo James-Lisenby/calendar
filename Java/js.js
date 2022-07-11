@@ -16,22 +16,22 @@ console.log(blockOfTime);
 
 // Needs to apply to the text area "children" of the time block.
 
-// function hourColor(){
-//     for (let index = 0; index < blockOfTime.length; index++) {
-//         var hour = blockOfTime[index].dataset.hour;
-//         if(currentTime > hour){
-//             blockOfTime[index].classList.add("past")
-//         }else if(currentTime == hour){
-//             blockOfTime[index].classList.add("present")
-//         }else if(currentTime < hour){
-//             blockOfTime[index].classList.add("future")
-//         }
+function hourColor(){
+    for (let index = 0; index < blockOfTime.length; index++) {
+        var hour = blockOfTime[index].dataset.hour;
+        if(currentTime > hour){
+            blockOfTime[index].firstElementChild.classList.add("past")
+        }else if(currentTime == hour){
+            blockOfTime[index].firstElementChild.classList.add("present")
+        }else if(currentTime < hour){
+            blockOfTime[index].firstElementChild.classList.add("future")
+        }
         
-//     };
+    };
 
-// }
+}
 
-// hourColor();
+hourColor();
 
 var text1 = document.getElementById('input-1');
 var text2 = document.getElementById('input-2');
