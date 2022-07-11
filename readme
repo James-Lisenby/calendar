@@ -1,0 +1,13 @@
+# James Lisenby's Simple day planner.
+
+Homework assignment 5
+
+What is it?
+The simple day planner is an application designed to keep track of your workday.
+User enters their information and hits the save button at the end of said row.
+The data is stored into local storage and retrieved and displayed upon reloading or opening the application.
+The application is also designed to change color of the timeblock based on if the hour is past, current, or future.
+
+Links
+Github - https://github.com/James-Lisenby/calendar
+Screenshot can be found in the images folder.
